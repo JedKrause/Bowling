@@ -3,4 +3,4 @@ project(Bowling)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Bowling main.cpp)
+add_executable(Bowling main.cpp game.cpp game.h)
