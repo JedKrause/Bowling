@@ -7,7 +7,7 @@
 
 
 class Game {
-
+    int totalScore = 0;
 public:
     void roll(int i);
     int scoreGame();

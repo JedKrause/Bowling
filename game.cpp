@@ -3,13 +3,18 @@
 //
 
 #include "game.h"
-
+/*
+ * Roll Pins
+ * @param frame - Number of pins
+ */
 void Game::roll(int i)
 {
-
+    totalScore += i;
 }
-
+/*
+ * Returns final score
+ */
 int Game::scoreGame()
 {
-    return 0;
+    return totalScore;
 }
