@@ -3,3 +3,13 @@
 //
 
 #include "game.h"
+
+void Game::roll(int i)
+{
+
+}
+
+int Game::scoreGame()
+{
+    return 0;
+}
