@@ -66,10 +66,24 @@ TEST_CASE("Single Strike Game Return 24","[Score]")
     g.roll(10);
     g.roll(4);
     g.roll(3);
-    for(int frame = 3; frame < 20; frame ++)
+    for(int frame = 4; frame < 20; frame ++)
     {
         g.roll(pins);
     }
     //Assert
     REQUIRE(24 == g.scoreGame());
+}
+
+TEST_CASE("All Strike Game Return 300","[Score]")
+{
+    //Arrange
+    Game g;
+    int pins = 10;
+    //Act
+    for(int frame = 0; frame < 12; frame ++)
+    {
+        g.roll(pins);
+    }
+    //Assert
+    REQUIRE(300 == g.scoreGame());
 }

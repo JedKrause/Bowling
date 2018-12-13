@@ -11,9 +11,11 @@ class Game {
     int currentRoll = 0;
     std::array<int,21> rolls; //one per roll
 public:
+    Game(); // Default Constructor
     void roll(int i);
     int scoreGame();
     bool isSpare(int frame);
+    bool isStrike(int frame);
 };
 
 
