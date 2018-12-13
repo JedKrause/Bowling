@@ -4,13 +4,16 @@
 
 #ifndef BOWLING_GAME_H
 #define BOWLING_GAME_H
-
+#include <array>
 
 class Game {
     int totalScore = 0;
+    int currentRoll = 0;
+    std::array<int,21> rolls; //one per roll
 public:
     void roll(int i);
     int scoreGame();
+    bool isSpare(int frame);
 };
 
 
